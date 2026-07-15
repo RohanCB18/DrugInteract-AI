@@ -1,0 +1,9 @@
+# Ignore checkpoints and data cache during backend Docker build
+# (These folders are mounted as volumes at runtime in docker-compose.yml anyway!)
+checkpoints/
+data_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
