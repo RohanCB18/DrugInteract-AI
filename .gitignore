@@ -1,0 +1,26 @@
+# Ignore Node dependencies and builds
+node_modules/
+dist/
+
+# Ignore Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+
+# Ignore database files
+*.db
+*.sqlite
+backend/predictions.db
+
+# Ignore environment config and private keys
+.env
+*.pem
+drug-interaction-key.pem
+
+# Ignore ALL model checkpoints and datasets for GitHub (we will copy them directly to EC2)
+backend/checkpoints/
+backend/data_cache/
